@@ -1,0 +1,444 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body
+{
+    color: #ededed;
+    background: black;
+}
+header
+{
+    position: fixed;
+    width: 100%;
+    padding: 2rem 10%;
+    background: rgba(100, 96, 96, 0.699);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border: 2px solid var(--text-color);
+}
+.logo
+{
+    position: relative;
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation:  slideBottom 1s ease forwards;
+    animation-delay: 1s;
+    color: whitesmoke;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.logo:hover
+{
+    text-decoration-line: underline;
+    color: black;
+    text-shadow: 0 0 5px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.logo span
+{
+    color: lightseagreen;
+    color: cyan;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.navbar a
+{
+    
+    display:inline-block;
+    font-size: 25px;
+    color: lightseagreen;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: smooth;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+    color: lightseagreen;
+    text-shadow: 0 0 1px cyan,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.navbar a:hover
+{
+   text-decoration-line: underline;
+   color: black;
+   text-shadow: 0 0 5px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+    
+}
+.home
+{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    padding: 90px 10% 0;
+}
+.home-content
+{
+    max-width: 700px;
+}
+.home-content .input
+{
+    margin-left: -12px;
+    color: cyan;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.home-content h3
+{
+    margin-left: 20px;
+    margin-top: -20px;
+    color: burlywood;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+}
+.home-content h4
+{
+    margin-left: -20px;
+    margin-top: 1rem;
+    color: burlywood;
+    font-size: 25px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 3s ease forwards;
+    animation-delay: 1s;
+}
+.home-content h3:nth-of-type(2)
+{
+    margin-bottom: 30px;
+}
+.home-content h1
+{
+    color: burlywood;
+    font-size: 2rem;
+    opacity: 0;
+    animation:  slideBottom 2s ease forwards;
+    animation-delay: 1s;
+}
+.home-sci a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid lightseagreen;
+    border-radius: 50%;
+    font-size: 20px;
+    color: lightseagreen;
+    text-decoration: none;
+    transition: .5s ease;
+    margin: 20px 25px 25px -20px;
+    animation:  slideBottom 6s ease forwards;
+    animation-delay: .1s;
+}
+.home-sci a:hover
+{
+    background: lightseagreen;
+    color: black;
+    box-shadow: 0 0 20px lightslategray;
+}
+.btn-box
+{
+    margin-top: 2rem;
+    margin-left: -20px;
+    display: inline-block;
+    padding: 12px 20px;
+    background: lightseagreen;
+    border-radius: 40px;
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid burlywood;
+    border-radius: 30px;
+    padding: 12px 35px;
+    transition: 0.5s;
+    opacity: 0;
+    animation:  slideBottom 6s ease forwards;
+    animation-delay: .5s;
+    box-shadow: 0 0 5px black, 0 0 10px cyan;
+}
+.btn-box:hover
+{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.about
+{
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.about-img img
+{
+    margin-left: 7rem;
+    margin-right: -18rem;
+    margin-top: 2rem;
+    margin-bottom: auto;
+    display: flex;
+    object-fit: contain;
+    top: 3rem;
+    width: 25vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.about-text h2
+{
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.about-text h2:hover
+{
+    color: black;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.about-text h2 span
+{
+    color: lightseagreen;
+    color: cyan;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.about-text h4
+{
+    font-size: 29px;
+    font-weight: 600;
+    color: cyan;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p
+{
+    color: cyan;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.education
+{
+    background-color: black;
+    color: cyan;
+    line-height: 2;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+.sub-title
+{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 70px;
+    color: black;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.sub-title span
+{
+    color: lightseagreen;
+    color: cyan;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.sub-title:hover
+{
+    color: white;
+    text-shadow: 0 0 1px blue,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.container
+{
+    padding: 70px;
+}
+.education-list
+{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    margin-top: 30px;
+}
+.education-list div
+{
+   background-color: transparent;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px cyan,
+                1px 1px 40px black; 
+}
+.education-list div i
+{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.education-list h3
+{
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+.education-list div a
+{
+    text-decoration: none;
+    color:  black;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.education-list div p
+{
+    margin-top: -20px;
+}
+.read
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: cyan;
+    border-radius: 40px;
+    font-size: 16px;
+    color:darkolivegreen;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 1s;
+    box-shadow: 0 0 5px black, 0 0 25px cyan;
+}
+.read:hover
+{
+    box-shadow: 0 0 5px lightseagreen,
+    0 0 25px cyan, 0 0 50px cyan, 
+    0 0 100px cyan, 0 0 200px cyan
+}
+.education-list div:hover
+{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes slideRight
+{
+    0%
+    {
+        transform: translateX(-100px)
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop
+{
+    0%
+    {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom
+{
+    0%
+    {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%
+    {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
